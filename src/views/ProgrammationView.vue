@@ -2,17 +2,18 @@
   <main>
     <div
       class="
-        bg-[url(public/img/festival_musique.webp)]
-        bg-no-repeat
-        h-screen
+        bg-[url(public/img/festival_musique_fond.webp)]
+        bg-auto bg-center bg-no-repeat
         grid
         place-items-center
+        w-screen
+        h-screen
       "
     >
       <h2 class="text-Custom-bordeaux text-4xl">Programmation</h2>
     </div>
     <!--section 1 jour 1-->
-    <section>
+    <section class="mt-8">
       <div class="flex justify-center">
         <Jour jour="Jour 1" date="Vendredi 22 juillet"></Jour>
       </div>
