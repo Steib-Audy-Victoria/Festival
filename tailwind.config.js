@@ -16,6 +16,10 @@ module.exports = {
         "chalkduster": ["Chalkduster"],
         "monaco": ["Monaco"]
       },
+      "width": {
+        "card_artiste": "35rem"
+      }
+
     },
   },
   plugins: [require('prettier-plugin-tailwindcss')],
