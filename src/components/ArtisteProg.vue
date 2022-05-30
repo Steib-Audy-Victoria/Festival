@@ -1,0 +1,26 @@
+<template>
+  <div class="bg-white drop-shadow-xl w-40 h-40 p-8 rounded-full m-2">
+    <div class="flex flex-col justify-center items-center">
+      <img :src="image" />
+      <p
+        class="
+          flex-grow-0 flex-shrink-0
+          text-base
+          font-semibold
+          text-center text-black
+        "
+      >
+        {{ nom }}
+      </p>
+    </div>
+  </div>
+</template>
+
+<script>
+export default {
+  props: {
+    nom: String,
+    image: String,
+  },
+};
+</script>
