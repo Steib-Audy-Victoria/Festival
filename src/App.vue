@@ -20,7 +20,9 @@
     </RouterLink>
   </header>
 
-  <footer class="bg-Custom-gray bg-[url(src/assets/FondFooter.svg)] h-60">
+  <RouterView />
+
+  <footer class="bg-Custom-gray bg-[url(public/FondFooter.svg)] h-60">
     <nav>
       <ul
         class="flex justify-center items-center text-white list-disc text-2xl"
@@ -43,9 +45,7 @@
       <Youtube></Youtube>
     </div>
   </footer>
-  <RouterView />
 </template>
-
 <script>
 import { RouterLink, RouterView } from "vue-router";
 import LogoRedLand from "./components/icons/LogoRedLand.vue";
