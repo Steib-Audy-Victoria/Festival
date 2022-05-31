@@ -7,7 +7,7 @@
       place-content-center
     "
   >
-    <div class="grid grid-cols-2 place-items-center">
+    <div class="grid lg:grid-cols-1 xl:grid-cols-2 place-items-center">
       <RouterLink to="/programmation">
         <CardAccueil
           Msg="Programmation"
