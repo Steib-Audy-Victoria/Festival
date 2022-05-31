@@ -14,11 +14,13 @@
     </div>
 
     <div class="grid grid-cols-2 place-items-center">
-      <CardArtiste
-        nom="Agoria"
-        cat="Techno, techno de Détroit, deep house, ambient"
-        image="public/img/Agoria.webp"
-      ></CardArtiste>
+      <RouterLink to="/artiste"
+        ><CardArtiste
+          nom="Agoria"
+          cat="Techno, techno de Détroit, deep house, ambient"
+          image="public/img/Agoria.webp"
+        ></CardArtiste
+      ></RouterLink>
       <CardArtiste
         nom="David Carretta"
         cat="Electro, electroclash, EBM"
