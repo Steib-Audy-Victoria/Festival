@@ -12,6 +12,7 @@
     >
       <h2 class="text-Custom-bordeaux text-4xl">Artistes</h2>
     </div>
+
     <div class="grid grid-cols-2 place-items-center">
       <CardArtiste
         nom="Agoria"
@@ -149,8 +150,12 @@
 
 <script>
 import CardArtiste from "../components/CardArtiste.vue";
+import ligneMdl from "../components/icons/ligneMdl.vue";
+import ligne1 from "../components/icons/ligne1.vue";
+import ligne2 from "../components/icons/ligne2.vue";
+import ligne3 from "../components/icons/ligne3.vue";
 
 export default {
-  components: { CardArtiste },
+  components: { CardArtiste, ligneMdl, ligne1, ligne2, ligne3 },
 };
 </script>
