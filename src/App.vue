@@ -22,7 +22,15 @@
 
   <RouterView />
 
-  <footer class="bg-Custom-gray bg-[url(public/FondFooter.svg)] h-60">
+  <footer
+    class="
+      bg-Custom-gray bg-[url(public/FondFooter.svg)]
+      h-60
+      bg-no-repeat
+      grid
+      place-content-center
+    "
+  >
     <nav>
       <ul
         class="flex justify-center items-center text-white list-disc text-2xl"
@@ -38,7 +46,7 @@
         >
       </ul>
     </nav>
-    <div class="flex justify-between items-center mx-40">
+    <div class="flex justify-between items-center mx-40 mt-10">
       <Facebook></Facebook>
       <Instagram></Instagram>
       <Twitter></Twitter>
