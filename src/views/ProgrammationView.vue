@@ -23,10 +23,12 @@
             <Scene scene="Scène 1"></Scene>
           </div>
           <div class="grid grid-cols-2">
-            <ArtisteProg
-              image="public/img/Agoria_prog.webp"
-              nom="Agoria"
-            ></ArtisteProg>
+            <RouterLink to="/concert"
+              ><ArtisteProg
+                image="public/img/Agoria_prog.webp"
+                nom="Agoria"
+              ></ArtisteProg
+            ></RouterLink>
             <ArtisteProg
               image="public/img/DJfly_prog.webp"
               nom="DJ Fly"
