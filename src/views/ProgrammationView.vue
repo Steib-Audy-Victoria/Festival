@@ -19,7 +19,9 @@
       </div>
       <div class="grid grid-cols-3 place-items-center mt-5">
         <div>
-          <Scene scene="Scène 1"></Scene>
+          <div class="flex justify-center">
+            <Scene scene="Scène 1"></Scene>
+          </div>
           <div class="grid grid-cols-2">
             <ArtisteProg
               image="public/img/Agoria_prog.webp"
@@ -37,7 +39,9 @@
         </div>
 
         <div>
-          <Scene scene="Scène 2"></Scene>
+          <div class="flex justify-center">
+            <Scene scene="Scène 2"></Scene>
+          </div>
           <div class="grid grid-cols-2">
             <ArtisteProg
               image="public/img/PetitBiscuit_prog.webp"
@@ -59,7 +63,9 @@
         </div>
 
         <div>
-          <Scene scene="Scène 3"></Scene>
+          <div class="flex justify-center">
+            <Scene scene="Scène 3"></Scene>
+          </div>
           <div class="grid grid-cols-2">
             <ArtisteProg
               image="public/img/Mondkopf_prog.webp"
@@ -84,7 +90,9 @@
       </div>
       <div class="grid grid-cols-3 place-items-center mt-5">
         <div>
-          <Scene scene="Scène 1"></Scene>
+          <div class="flex justify-center">
+            <Scene scene="Scène 1"></Scene>
+          </div>
           <div class="grid grid-cols-2">
             <ArtisteProg
               image="public/img/PetitBiscuit_prog.webp"
@@ -102,7 +110,9 @@
         </div>
 
         <div>
-          <Scene scene="Scène 2"></Scene>
+          <div class="flex justify-center">
+            <Scene scene="Scène 2"></Scene>
+          </div>
           <div class="grid grid-cols-2">
             <ArtisteProg
               image="public/img/LBOne_prog.webp"
@@ -124,7 +134,9 @@
         </div>
 
         <div>
-          <Scene scene="Scène 3"></Scene>
+          <div class="flex justify-center">
+            <Scene scene="Scène 3"></Scene>
+          </div>
           <div class="grid grid-cols-2">
             <ArtisteProg
               image="public/img/FrenchKiwiJuice_prog.webp"
@@ -149,7 +161,9 @@
       </div>
       <div class="grid grid-cols-3 place-items-center mt-5">
         <div>
-          <Scene scene="Scène 1"></Scene>
+          <div class="flex justify-center">
+            <Scene scene="Scène 1"></Scene>
+          </div>
           <div class="grid grid-cols-2">
             <ArtisteProg
               image="public/img/DJSnake_prog.webp"
@@ -167,7 +181,9 @@
         </div>
 
         <div>
-          <Scene scene="Scène 2"></Scene>
+          <div class="flex justify-center">
+            <Scene scene="Scène 2"></Scene>
+          </div>
           <div class="grid grid-cols-2">
             <ArtisteProg
               image="public/img/BobSinclar_prog.webp"
@@ -189,7 +205,9 @@
         </div>
 
         <div>
-          <Scene scene="Scène 3"></Scene>
+          <div class="flex justify-center">
+            <Scene scene="Scène 3"></Scene>
+          </div>
           <div class="grid grid-cols-2">
             <ArtisteProg
               image="public/img/Agoria_prog.webp"
