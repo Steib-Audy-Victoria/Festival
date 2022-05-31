@@ -83,6 +83,9 @@
         </div>
       </div>
     </section>
+    <div class="flex justify-center my-20">
+      <ligne1></ligne1>
+    </div>
     <!--section 2 jour 2-->
     <section class="mt-8">
       <div class="flex justify-center">
@@ -154,6 +157,9 @@
         </div>
       </div>
     </section>
+    <div class="flex justify-center my-20">
+      <ligne2></ligne2>
+    </div>
     <!--section 3 jour 3-->
     <section class="mt-8">
       <div class="flex justify-center">
@@ -231,8 +237,10 @@
 import Jour from "../components/Jour.vue";
 import Scene from "../components/Scene.vue";
 import ArtisteProg from "../components/ArtisteProg.vue";
+import ligne1 from "../components/icons/ligne1.vue";
+import ligne2 from "../components/icons/ligne2.vue";
 
 export default {
-  components: { Jour, Scene, ArtisteProg },
+  components: { Jour, Scene, ArtisteProg, ligne1, ligne2 },
 };
 </script>
