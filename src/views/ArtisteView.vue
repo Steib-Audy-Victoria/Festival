@@ -9,7 +9,7 @@
         h-screen
       "
     >
-      <h2 class="text-Custom-bordeaux text-4xl">Agoria</h2>
+      <h2 class="text-Custom-bordeaux text-5xl">Agoria</h2>
     </div>
     <div class="grid grid-cols-2 place-items-center">
       <div>

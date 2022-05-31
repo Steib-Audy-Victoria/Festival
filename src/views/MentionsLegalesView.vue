@@ -10,7 +10,7 @@
         h-screen
       "
     >
-      <h2 class="text-Custom-bordeaux text-4xl">Mentions Légales</h2>
+      <h2 class="text-Custom-bordeaux text-5xl">Mentions Légales</h2>
     </div>
     <section class="mt-20">
       <h2 class="font-monaco text-4xl ml-12">Identité & Coordonnées :</h2>

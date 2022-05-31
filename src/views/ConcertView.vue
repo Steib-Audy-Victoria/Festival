@@ -9,7 +9,7 @@
         h-screen
       "
     >
-      <h2 class="text-Custom-bordeaux text-4xl">Agoria</h2>
+      <h2 class="text-Custom-bordeaux text-5xl">Agoria</h2>
     </div>
     <div class="text-lg flex justify-evenly text-center my-12 mt-20">
       <div>

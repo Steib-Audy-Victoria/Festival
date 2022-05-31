@@ -10,7 +10,7 @@
         h-screen
       "
     >
-      <h2 class="text-Custom-bordeaux text-4xl">Programmation</h2>
+      <h2 class="text-Custom-bordeaux text-5xl">Programmation</h2>
     </div>
     <!--section 1 jour 1-->
     <section class="mt-8">
