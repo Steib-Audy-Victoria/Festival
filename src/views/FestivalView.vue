@@ -1,6 +1,18 @@
 <template>
-  <main class="grid grid-cols-2 place-items-center">
-    <div class="text-lg">
+  <main>
+    <div
+      class="
+        bg-[url(public/img/festival_musique_fond.webp)]
+        bg-auto bg-center bg-no-repeat
+        grid
+        place-items-center
+        w-screen
+        h-screen
+      "
+    >
+      <h2 class="text-Custom-bordeaux text-4xl">Festival</h2>
+    </div>
+    <div class="text-lg grid grid-cols-2 place-items-center">
       <p>
         <span class="font-semibold">Festival de musique électronique</span>, à
         strasbourg, du vendredi 22 juillet au dimanche 24 juillet, avec 3
