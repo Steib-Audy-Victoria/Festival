@@ -12,7 +12,7 @@
     >
       <h2 class="text-Custom-bordeaux text-4xl">Festival</h2>
     </div>
-    <div class="grid grid-cols-2 place-items-center">
+    <div class="grid grid-cols-1 lg:grid-cols-2 place-items-center">
       <div class="text-lg ml-12">
         <p class="mb-12">
           <span class="font-semibold">Festival de musique électronique</span>, à
@@ -57,16 +57,18 @@
             <li>Kiddy Smile</li>
           </ul>
         </div>
-        <img
-          class="my-4"
-          src="public/img/Festival1.webp"
-          alt="image du festival"
-        />
-        <img
-          class="my-4"
-          src="public/img/Festival2.webp"
-          alt="image du festival"
-        />
+        <div>
+          <img
+            class="my-4"
+            src="public/img/Festival1.webp"
+            alt="image du festival"
+          />
+          <img
+            class="my-4"
+            src="public/img/Festival2.webp"
+            alt="image du festival"
+          />
+        </div>
       </div>
       <div>
         <img

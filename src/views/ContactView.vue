@@ -12,7 +12,7 @@
     >
       <h2 class="text-Custom-bordeaux text-4xl">Contact</h2>
     </div>
-    <div class="grid grid-cols-2 place-items-center">
+    <div class="grid grid-cols-1 lg:grid-cols-2 place-items-center">
       <section>
         <h2 class="text-3xl text-Custom-bordeaux text-center my-4">
           Formulaire de contact
