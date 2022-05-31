@@ -13,7 +13,7 @@
       <h2 class="text-Custom-bordeaux text-4xl">Artistes</h2>
     </div>
 
-    <div class="grid grid-cols-2 place-items-center">
+    <div class="grid grid-cols-1 lg:grid-cols-2 place-items-center">
       <RouterLink to="/artiste"
         ><CardArtiste
           nom="Agoria"
