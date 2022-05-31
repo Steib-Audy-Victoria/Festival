@@ -17,7 +17,15 @@
       <div class="flex justify-center">
         <Jour jour="Jour 1" date="Vendredi 22 juillet"></Jour>
       </div>
-      <div class="grid grid-cols-3 place-items-center mt-5">
+      <div
+        class="
+          grid grid-cols-1
+          md:grid-cols-2
+          xl:grid-cols-3
+          place-items-center
+          mt-5
+        "
+      >
         <div>
           <div class="flex justify-center">
             <Scene scene="Scène 1"></Scene>
@@ -93,7 +101,15 @@
       <div class="flex justify-center">
         <Jour jour="Jour 2" date="Samedi 23 juillet"></Jour>
       </div>
-      <div class="grid grid-cols-3 place-items-center mt-5">
+      <div
+        class="
+          grid grid-cols-1
+          md:grid-cols-2
+          xl:grid-cols-3
+          place-items-center
+          mt-5
+        "
+      >
         <div>
           <div class="flex justify-center">
             <Scene scene="Scène 1"></Scene>
@@ -167,7 +183,15 @@
       <div class="flex justify-center">
         <Jour jour="Jour 3" date="Dimanche 24 juillet"></Jour>
       </div>
-      <div class="grid grid-cols-3 place-items-center mt-5">
+      <div
+        class="
+          grid grid-cols-1
+          md:grid-cols-2
+          xl:grid-cols-3
+          place-items-center
+          mt-5
+        "
+      >
         <div>
           <div class="flex justify-center">
             <Scene scene="Scène 1"></Scene>
