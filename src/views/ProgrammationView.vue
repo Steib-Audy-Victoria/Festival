@@ -161,7 +161,7 @@
       <ligne2></ligne2>
     </div>
     <!--section 3 jour 3-->
-    <section class="mt-8">
+    <section class="mt-8 mb-40">
       <div class="flex justify-center">
         <Jour jour="Jour 3" date="Dimanche 24 juillet"></Jour>
       </div>
