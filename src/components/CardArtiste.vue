@@ -21,15 +21,24 @@
         {{ cat }}
       </p>
     </div>
-    <Fleche />
+
+    <div class="flex flex-col gap-10">
+      <div class="flex justify-evenly">
+        <suppr />
+        <modif />
+      </div>
+      <Fleche />
+    </div>
   </div>
 </template>
 
 <script>
 import Fleche from "../components/icons/Fleche.vue";
+import suppr from "../components/icons/suppr.vue";
+import modif from "../components/icons/modif.vue";
 
 export default {
-  components: { Fleche },
+  components: { Fleche, suppr, modif },
   props: {
     nom: String,
     image: String,
