@@ -69,12 +69,12 @@ const router = createRouter({
       component: CreateArtistesView
     },
     {
-      path: '/deleteArtistes',
+      path: '/deleteArtistes/:id',
       name: 'deleteArtistes',
       component: DeleteArtistesView
     },
     {
-      path: '/updateArtistes',
+      path: '/updateArtistes/:id',
       name: 'updateArtistes',
       component: UpdateArtistesView
     },
