@@ -16,12 +16,14 @@
     <div class="grid grid-cols-1 lg:grid-cols-2 place-items-center">
       <RouterLink to="/artiste"
         ><CardArtiste
-          nom="Agoria"
-          cat="Techno, techno de Détroit, deep house, ambient"
-          image="/img/Agoria.webp"
+          v-for="Artiste in Artistes"
+          :key="Artiste.id"
+          :nom="Artiste.Nom"
+          :cat="Artistes.Genre"
+          :image="Artistes.imgPrésentation"
         ></CardArtiste
       ></RouterLink>
-      <CardArtiste
+      <!--<CardArtiste
         nom="David Carretta"
         cat="Electro, electroclash, EBM"
         image="/img/DavidCarretta.webp"
@@ -145,7 +147,7 @@
         nom="DJ Snake"
         cat="EDM trap, electro house, moombahton, hip-hop, rap"
         image="/img/DJSnake.webp"
-      ></CardArtiste>
+      ></CardArtiste>-->
     </div>
   </main>
 </template>
@@ -157,7 +159,32 @@ import ligne1 from "../components/icons/ligne1.vue";
 import ligne2 from "../components/icons/ligne2.vue";
 import ligne3 from "../components/icons/ligne3.vue";
 
+import { getFirestore, collection, onSnapshot } from "firebase/firestore";
+
 export default {
   components: { CardArtiste, ligneMdl, ligne1, ligne2, ligne3 },
+  data() {
+    return {
+      listeArtistes: [],
+      nom: null,
+    };
+  },
+  mounted() {
+    this.getArtistes();
+  },
+  methods: {
+    async getArtistes() {
+      const firestore = getFirestore();
+      const dbArtistes = collection(firestore, "Artistes");
+      const query = await onSnapshot(dbArtistes, (snapshot) => {
+        console.log("query", query);
+        this.listeArtistes = snapshot.docs.map((doc) => ({
+          id: doc.id,
+          ...doc.data(),
+        }));
+        console.log("listeArtistes", this.listeArtistes);
+      });
+    },
+  },
 };
 </script>
