@@ -90,7 +90,14 @@
   >
     <nav>
       <ul
-        class="flex justify-center items-center text-white list-disc text-2xl"
+        class="
+          grid grid-cols-1
+          md:flex md:justify-center
+          items-center
+          text-white
+          list-disc
+          text-2xl
+        "
       >
         <RouterLink to="/programmation">
           <li class="mx-6">Programmation</li>
@@ -103,7 +110,7 @@
         >
       </ul>
     </nav>
-    <div class="flex justify-between items-center mx-40 mt-10">
+    <div class="flex justify-between items-center gap-10 mx-40 mt-10">
       <Facebook></Facebook>
       <Instagram></Instagram>
       <Twitter></Twitter>
