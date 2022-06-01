@@ -12,7 +12,7 @@
     "
     style="box-shadow: -3px 4px 8px 1px #6e2e2b"
   >
-    <img :src="image" class="rounded-lg object-cover" />
+    <img :src="image" class="w-28 rounded-lg object-cover" />
     <div class="flex flex-col justify-start items-center">
       <p class="text-4xl font-semibold text-center text-black px-3">
         {{ nom }}
