@@ -16,9 +16,9 @@
     <div class="grid grid-cols-1 lg:grid-cols-2 place-items-center">
       <RouterLink to="/artiste"
         ><CardArtiste
-          v-for="Artiste in Artistes"
-          :key="Artiste.id"
-          :nom="Artiste.Nom"
+          v-for="Artistes in listeArtistes"
+          :key="Artistes.id"
+          :nom="Artistes.Nom"
           :cat="Artistes.Genre"
           :image="Artistes.imgPrésentation"
         ></CardArtiste
