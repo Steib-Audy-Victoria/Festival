@@ -32,7 +32,7 @@
           </div>
           <div class="grid grid-cols-2">
             <RouterLink to="/concert"
-              ><ArtisteProg image="/img/Agoria2.webp" nom="Agoria"></ArtisteProg
+              ><ArtisteProg image="/img/Agoria.webp" nom="Agoria"></ArtisteProg
             ></RouterLink>
             <ArtisteProg
               image="/img/DJfly_prog.webp"
