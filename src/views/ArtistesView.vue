@@ -20,10 +20,14 @@
           :key="Artistes.id"
           :nom="Artistes.Nom"
           :cat="Artistes.Genre"
-          :image="Artistes.imgPrésentation"
+          :image="Artistes.imgPresentation"
         ></CardArtiste
       ></RouterLink>
       <!--<CardArtiste
+        nom="Agoria"
+        cat="Techno, techno de Détroit, deep house, ambient"
+        image="/img/Agoria.webp"
+      ></CardArtiste><CardArtiste
         nom="David Carretta"
         cat="Electro, electroclash, EBM"
         image="/img/DavidCarretta.webp"
@@ -160,12 +164,14 @@ import ligne2 from "../components/icons/ligne2.vue";
 import ligne3 from "../components/icons/ligne3.vue";
 
 import { getFirestore, collection, onSnapshot } from "firebase/firestore";
+import { getStorage, ref, getDownloadURL } from "firebase/storage";
 
 export default {
   components: { CardArtiste, ligneMdl, ligne1, ligne2, ligne3 },
   data() {
     return {
       listeArtistes: [],
+      imageData: null,
       nom: null,
     };
   },
@@ -182,6 +188,18 @@ export default {
           id: doc.id,
           ...doc.data(),
         }));
+        this.listeArtistes.forEach(function (personne) {
+          const storage = getStorage();
+          const spaceRef = ref(storage, "Artistes/" + personne.imgPresentation);
+          getDownloadURL(spaceRef)
+            .then((url) => {
+              personne.imgPresentation = url;
+              console.log("personne", personne);
+            })
+            .catch((error) => {
+              console.log("erreur downloadUrl", error);
+            });
+        });
         console.log("listeArtistes", this.listeArtistes);
       });
     },
