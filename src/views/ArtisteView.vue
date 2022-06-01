@@ -11,7 +11,7 @@
     >
       <h2 class="text-Custom-bordeaux text-5xl">Agoria</h2>
     </div>
-    <div class="grid grid-cols-2 place-items-center">
+    <div class="grid grid-cols-1 xl:grid-cols-2 place-items-center">
       <div>
         <div class="text-lg">
           <p class="ml-10 my-10">
@@ -40,13 +40,15 @@
             </button>
           </div>
         </div>
-        <img
-          class="my-4 ml-10"
-          src="public/img/Agoria1.webp"
-          alt="Image de Agoria"
-        />
+        <div class="grid place-items-center">
+          <img
+            class="my-4"
+            src="public/img/Agoria1.webp"
+            alt="Image de Agoria"
+          />
+        </div>
       </div>
-      <div>
+      <div class="grid place-items-center">
         <img class="my-4" src="public/img/Agoria2.webp" alt="Image de Agoria" />
         <img class="my-4" src="public/img/Agoria3.webp" alt="Image de Agoria" />
       </div>

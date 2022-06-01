@@ -13,7 +13,7 @@
       <h2 class="text-Custom-bordeaux text-5xl">Festival</h2>
     </div>
     <div class="grid grid-cols-1 lg:grid-cols-2 place-items-center">
-      <div class="text-lg ml-12">
+      <div class="text-lg m-12 lg:ml-12">
         <p class="mb-12">
           <span class="font-semibold">Festival de musique électronique</span>, à
           strasbourg, du vendredi 22 juillet au dimanche 24 juillet, avec 3

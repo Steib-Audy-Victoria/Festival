@@ -21,10 +21,31 @@
         <p>Dimanche 24 juillet à 14h</p>
       </div>
     </div>
-    <div class="flex justify-evenly my-12 mb-20">
-      <img src="public/img/AgoriaC1.webp" alt="Image de Agoria en Concert" />
-      <img src="public/img/AgoriaC2.webp" alt="Image de Agoria en Concert" />
-      <img src="public/img/AgoriaC3.webp" alt="Image de Agoria en Concert" />
+    <div
+      class="
+        grid grid-cols-1
+        md:grid-cols-2
+        place-items-center
+        xl:flex xl:justify-evenly
+        my-12
+        mb-20
+      "
+    >
+      <img
+        class="my-2"
+        src="public/img/AgoriaC1.webp"
+        alt="Image de Agoria en Concert"
+      />
+      <img
+        class="my-2"
+        src="public/img/AgoriaC2.webp"
+        alt="Image de Agoria en Concert"
+      />
+      <img
+        class="my-2"
+        src="public/img/AgoriaC3.webp"
+        alt="Image de Agoria en Concert"
+      />
     </div>
   </main>
 </template>
