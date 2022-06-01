@@ -45,8 +45,8 @@
         </div>
       </div>
       <div class="grid place-items-center">
+        <img class="my-4" src="/img/Agoria.webp" alt="Image de Agoria" />
         <img class="my-4" src="/img/Agoria2.webp" alt="Image de Agoria" />
-        <img class="my-4" src="/img/Agoria3.webp" alt="Image de Agoria" />
       </div>
     </div>
   </main>
