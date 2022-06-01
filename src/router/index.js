@@ -8,6 +8,8 @@ import ConcertView from '../views/ConcertView.vue'
 import ArtisteView from '../views/ArtisteView.vue'
 import MentionsLegalesView from '../views/MentionsLegalesView.vue'
 import Page404 from '../views/Page404.vue'
+import CreateArtistesView from '../views/CreateArtistesView.vue'
+
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -56,6 +58,11 @@ const router = createRouter({
       path: '/:pathMatch(.*)*',
       name: 'page404',
       component: Page404
+    },
+    {
+      path: '/createArtistes',
+      name: 'createArtistes',
+      component: CreateArtistesView
     },
 
   ]

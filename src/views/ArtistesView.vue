@@ -13,6 +13,12 @@
       <h2 class="text-Custom-bordeaux text-5xl">Artistes</h2>
     </div>
 
+    <div class="flex justify-center m-2">
+      <RouterLink to="/createArtistes"
+        ><button>Création d'un artiste</button></RouterLink
+      >
+    </div>
+
     <div class="grid grid-cols-1 lg:grid-cols-2 place-items-center">
       <RouterLink to="/artiste"
         ><CardArtiste
@@ -171,7 +177,6 @@ export default {
   data() {
     return {
       listeArtistes: [],
-      imageData: null,
       nom: null,
     };
   },
