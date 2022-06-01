@@ -30,7 +30,7 @@
             <Youtube></Youtube>
             <p class="underline">Lien de son dernier album</p>
             <img
-              src="public/img/AgoriaAlbum.webp"
+              src="/img/AgoriaAlbum.webp"
               alt="Image du dernière album de Agoria"
             />
           </div>
@@ -41,16 +41,12 @@
           </div>
         </div>
         <div class="grid place-items-center">
-          <img
-            class="my-4"
-            src="public/img/Agoria1.webp"
-            alt="Image de Agoria"
-          />
+          <img class="my-4" src="/img/Agoria1.webp" alt="Image de Agoria" />
         </div>
       </div>
       <div class="grid place-items-center">
-        <img class="my-4" src="public/img/Agoria2.webp" alt="Image de Agoria" />
-        <img class="my-4" src="public/img/Agoria3.webp" alt="Image de Agoria" />
+        <img class="my-4" src="/img/Agoria2.webp" alt="Image de Agoria" />
+        <img class="my-4" src="/img/Agoria3.webp" alt="Image de Agoria" />
       </div>
     </div>
   </main>

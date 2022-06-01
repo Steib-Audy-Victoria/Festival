@@ -33,18 +33,15 @@
           <div class="grid grid-cols-2">
             <RouterLink to="/concert"
               ><ArtisteProg
-                image="public/img/Agoria_prog.webp"
+                image="/img/Agoria_prog.webp"
                 nom="Agoria"
               ></ArtisteProg
             ></RouterLink>
             <ArtisteProg
-              image="public/img/DJfly_prog.webp"
+              image="/img/DJfly_prog.webp"
               nom="DJ Fly"
             ></ArtisteProg>
-            <ArtisteProg
-              image="public/img/FEM_prog.webp"
-              nom="F.E.M"
-            ></ArtisteProg>
+            <ArtisteProg image="/img/FEM_prog.webp" nom="F.E.M"></ArtisteProg>
           </div>
         </div>
 
@@ -54,19 +51,19 @@
           </div>
           <div class="grid grid-cols-2">
             <ArtisteProg
-              image="public/img/PetitBiscuit_prog.webp"
+              image="/img/PetitBiscuit_prog.webp"
               nom="Petit Biscuit"
             ></ArtisteProg>
             <ArtisteProg
-              image="public/img/Fakear_prog.webp"
+              image="/img/Fakear_prog.webp"
               nom="Fakear"
             ></ArtisteProg>
             <ArtisteProg
-              image="public/img/Koudlam_prog.webp"
+              image="/img/Koudlam_prog.webp"
               nom="Koudlam"
             ></ArtisteProg>
             <ArtisteProg
-              image="public/img/Catman_prog.webp"
+              image="/img/Catman_prog.webp"
               nom="Catman"
             ></ArtisteProg>
           </div>
@@ -78,15 +75,15 @@
           </div>
           <div class="grid grid-cols-2">
             <ArtisteProg
-              image="public/img/Mondkopf_prog.webp"
+              image="/img/Mondkopf_prog.webp"
               nom="Mondkopf"
             ></ArtisteProg>
             <ArtisteProg
-              image="public/img/LaurentGarnier_prog.webp"
+              image="/img/LaurentGarnier_prog.webp"
               nom="Laurent Garnier"
             ></ArtisteProg>
             <ArtisteProg
-              image="public/img/Danger_prog.webp"
+              image="/img/Danger_prog.webp"
               nom="Danger"
             ></ArtisteProg>
           </div>
@@ -116,15 +113,15 @@
           </div>
           <div class="grid grid-cols-2">
             <ArtisteProg
-              image="public/img/PetitBiscuit_prog.webp"
+              image="/img/PetitBiscuit_prog.webp"
               nom="Petit Biscuit"
             ></ArtisteProg>
             <ArtisteProg
-              image="public/img/TheHacker_prog.webp"
+              image="/img/TheHacker_prog.webp"
               nom="The Hacker"
             ></ArtisteProg>
             <ArtisteProg
-              image="public/img/KiddySmile_prog.webp"
+              image="/img/KiddySmile_prog.webp"
               nom="Kiddy Smile"
             ></ArtisteProg>
           </div>
@@ -136,21 +133,18 @@
           </div>
           <div class="grid grid-cols-2">
             <ArtisteProg
-              image="public/img/LBOne_prog.webp"
+              image="/img/LBOne_prog.webp"
               nom="L.B. One"
             ></ArtisteProg>
             <ArtisteProg
-              image="public/img/Gesaffelstein_prog.webp"
+              image="/img/Gesaffelstein_prog.webp"
               nom="Gesaffelstein"
             ></ArtisteProg>
             <ArtisteProg
-              image="public/img/Electrosexual_prog.webp"
+              image="/img/Electrosexual_prog.webp"
               nom="Electrosexual"
             ></ArtisteProg>
-            <ArtisteProg
-              image="public/img/Marst_prog.webp"
-              nom="Marst"
-            ></ArtisteProg>
+            <ArtisteProg image="/img/Marst_prog.webp" nom="Marst"></ArtisteProg>
           </div>
         </div>
 
@@ -160,15 +154,15 @@
           </div>
           <div class="grid grid-cols-2">
             <ArtisteProg
-              image="public/img/FrenchKiwiJuice_prog.webp"
+              image="/img/FrenchKiwiJuice_prog.webp"
               nom="French Kiwi Juice"
             ></ArtisteProg>
             <ArtisteProg
-              image="public/img/DavidCarretta_prog.webp"
+              image="/img/DavidCarretta_prog.webp"
               nom="David Carretta"
             ></ArtisteProg>
             <ArtisteProg
-              image="public/img/MaxSeason_prog.webp"
+              image="/img/MaxSeason_prog.webp"
               nom="Max Season"
             ></ArtisteProg>
           </div>
@@ -198,15 +192,15 @@
           </div>
           <div class="grid grid-cols-2">
             <ArtisteProg
-              image="public/img/DJSnake_prog.webp"
+              image="/img/DJSnake_prog.webp"
               nom="DJ Snake"
             ></ArtisteProg>
             <ArtisteProg
-              image="public/img/Brodinski_prog.webp"
+              image="/img/Brodinski_prog.webp"
               nom="Brodinski"
             ></ArtisteProg>
             <ArtisteProg
-              image="public/img/Perturbator_prog.webp"
+              image="/img/Perturbator_prog.webp"
               nom="Perturbator"
             ></ArtisteProg>
           </div>
@@ -218,19 +212,16 @@
           </div>
           <div class="grid grid-cols-2">
             <ArtisteProg
-              image="public/img/BobSinclar_prog.webp"
+              image="/img/BobSinclar_prog.webp"
               nom="Bob Sinclar"
             ></ArtisteProg>
             <ArtisteProg
-              image="public/img/Gesaffelstein_prog.webp"
+              image="/img/Gesaffelstein_prog.webp"
               nom="Gesaffelstein"
             ></ArtisteProg>
+            <ArtisteProg image="/img/Igorr_prog.webp" nom="Igorr"></ArtisteProg>
             <ArtisteProg
-              image="public/img/Igorr_prog.webp"
-              nom="Igorr"
-            ></ArtisteProg>
-            <ArtisteProg
-              image="public/img/PandaDub_prog.webp"
+              image="/img/PandaDub_prog.webp"
               nom="Panda Dub"
             ></ArtisteProg>
           </div>
@@ -242,15 +233,15 @@
           </div>
           <div class="grid grid-cols-2">
             <ArtisteProg
-              image="public/img/Agoria_prog.webp"
+              image="/img/Agoria_prog.webp"
               nom="Agoria"
             ></ArtisteProg>
             <ArtisteProg
-              image="public/img/Madeon_prog.webp"
+              image="/img/Madeon_prog.webp"
               nom="Madeon"
             ></ArtisteProg>
             <ArtisteProg
-              image="public/img/Fakear_prog.webp"
+              image="/img/Fakear_prog.webp"
               nom="Fakear"
             ></ArtisteProg>
           </div>

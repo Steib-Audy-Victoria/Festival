@@ -61,7 +61,7 @@
         <h2 class="text-3xl text-Custom-bordeaux text-center my-4">
           Google map
         </h2>
-        <img src="public/img/map.webp" alt="image de la map" />
+        <img src="/img/map.webp" alt="image de la map" />
         <div class="flex justify-center items-center my-6">
           <livre class="mr-2"></livre>
           <p class="text-lg font-semibold underline">Lien vers google map</p>
