@@ -15,7 +15,9 @@
 
     <div class="flex justify-center m-2">
       <RouterLink to="/createArtistes"
-        ><button>Création d'un artiste</button></RouterLink
+        ><button class="border border-Custom-red text-lg p-2 rounded-lg">
+          Création d'un artiste
+        </button></RouterLink
       >
     </div>
 

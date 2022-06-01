@@ -9,6 +9,10 @@ import ArtisteView from '../views/ArtisteView.vue'
 import MentionsLegalesView from '../views/MentionsLegalesView.vue'
 import Page404 from '../views/Page404.vue'
 import CreateArtistesView from '../views/CreateArtistesView.vue'
+import DeleteArtistesView from '../views/DeleteArtistesView.vue'
+import UpdateArtistesView from '../views/UpdateArtistesView.vue'
+
+
 
 
 const router = createRouter({
@@ -63,6 +67,16 @@ const router = createRouter({
       path: '/createArtistes',
       name: 'createArtistes',
       component: CreateArtistesView
+    },
+    {
+      path: '/deleteArtistes',
+      name: 'deleteArtistes',
+      component: DeleteArtistesView
+    },
+    {
+      path: '/updateArtistes',
+      name: 'updateArtistes',
+      component: UpdateArtistesView
     },
 
   ]

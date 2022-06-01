@@ -1,9 +1,9 @@
 <template>
   <main>
     <div class="flex justify-center my-20">
-      <h2 class="text-Custom-red text-4xl">Création d'un artiste</h2>
+      <h2 class="text-Custom-red text-4xl">Mise à jour d'un artiste</h2>
     </div>
-    <form @submit.prevent="createArtistes">
+    <form @submit.prevent="updateArtistes">
       <div class="grid grid-cols-2">
         <div class="mx-16">
           <img :src="imageData" />
@@ -35,7 +35,7 @@
           class="border border-Custom-red p-2 rounded-lg text-lg"
           type="submit"
         >
-          Créer
+          Modifier
         </button>
         <button class="border border-Custom-red p-2 rounded-lg text-lg">
           <router-link to="/artistes">Cancel</router-link>
@@ -49,16 +49,24 @@
 import {
   getFirestore,
   collection,
-  addDoc,
+  doc,
+  getDoc,
+  updateDoc,
   onSnapshot,
   query,
   orderBy,
 } from "firebase/firestore";
 
-import { getStorage, ref, uploadString } from "firebase/storage";
+import {
+  getStorage,
+  ref,
+  getDownloadURL,
+  uploadString,
+  deleteObject,
+} from "firebase/storage";
 
 export default {
-  name: "CreateArtistesView",
+  name: "UpdateArtistesView",
   data() {
     return {
       imageData: null,
@@ -67,11 +75,17 @@ export default {
         Nom: null,
         imgPresentation: null,
       },
+      refArtistes: null,
+      imgModifiee: false,
+      photoActuelle: null,
     };
   },
   mounted() {
+    console.log("id artistes", this.$route.params.id);
+    this.getArtistes(this.$route.params.id);
     this.getArtistes();
   },
+
   methods: {
     async getArtistes() {
       const firestore = getFirestore();
@@ -82,13 +96,37 @@ export default {
           id: doc.id,
           ...doc.data(),
         }));
-        console.log("Liste des artistes", this.listeArtistes);
       });
+    },
+
+    async getArtistes(id) {
+      const firestore = getFirestore();
+      const docRef = doc(firestore, "Artistes", id);
+      this.refArtistes = await getDoc(docRef);
+      if (this.refArtistes.exists()) {
+        this.Artistes = this.refArtistes.data();
+        this.photoActuelle = this.Artistes.imgPresentation;
+      } else {
+        this.console.log("Artiste inexistant");
+      }
+      const storage = getStorage();
+      const spaceRef = ref(
+        storage,
+        "Artistes/" + this.Artistes.imgPresentation
+      );
+      getDownloadURL(spaceRef)
+        .then((url) => {
+          this.imageData = url;
+        })
+        .catch((error) => {
+          console.log("erreur downloadUrl", error);
+        });
     },
 
     previewImage: function (event) {
       this.file = this.$refs.file.files[0];
       this.Artistes.imgPresentation = this.file.name;
+      this.imgModifiee = true;
       var input = event.target;
       if (input.files && input.files[0]) {
         var reader = new FileReader();
@@ -99,18 +137,25 @@ export default {
       }
     },
 
-    async createArtistes() {
-      const storage = getStorage();
-      const refStorage = ref(
-        storage,
-        "Artistes/" + this.Artistes.imgPresentation
-      );
-      await uploadString(refStorage, this.imageData, "data_url").then(
-        (snapshot) => {
-          console.log("Uploaded a base64 string");
-          const db = getFirestore();
-          const docRef = addDoc(collection(db, "Artistes"), this.Artistes);
-        }
+    async updateArtistes() {
+      if (this.imgModifiee) {
+        const storage = getStorage();
+        let docRef = ref(storage, "Artistes/" + this.photoActuelle);
+        deleteObject(docRef);
+        docRef = ref(storage, "Artistes/" + this.Artistes.imgPresentation);
+        await uploadString(docRef, this.imageData, "data_url").then(
+          (snapshot) => {
+            console.log(
+              "Uploaded a base64 string",
+              this.Artistes.imgPresentation
+            );
+          }
+        );
+      }
+      const firestore = getFirestore();
+      await updateDoc(
+        doc(firestore, "Artistes", this.$route.params.id),
+        this.Artistes
       );
       this.$router.push("/artistes");
     },
