@@ -58,47 +58,39 @@
           </ul>
         </div>
         <div>
-          <img
-            class="my-4"
-            src="public/img/Festival1.webp"
-            alt="image du festival"
-          />
-          <img
-            class="my-4"
-            src="public/img/Festival2.webp"
-            alt="image du festival"
-          />
+          <img class="my-4" src="/img/Festival1.webp" alt="image du festival" />
+          <img class="my-4" src="/img/Festival2.webp" alt="image du festival" />
         </div>
       </div>
       <div>
         <img
           class="my-4"
-          src="public/img/Festival_col1.webp"
+          src="/img/Festival_col1.webp"
           alt="image du festival"
         />
         <img
           class="my-4"
-          src="public/img/Festival_col2.webp"
+          src="/img/Festival_col2.webp"
           alt="image du festival"
         />
         <img
           class="my-4"
-          src="public/img/Festival_col3.webp"
+          src="/img/Festival_col3.webp"
           alt="image du festival"
         />
         <img
           class="my-4"
-          src="public/img/Festival_col4.webp"
+          src="/img/Festival_col4.webp"
           alt="image du festival"
         />
         <img
           class="my-4"
-          src="public/img/Festival_col5.webp"
+          src="/img/Festival_col5.webp"
           alt="image du festival"
         />
         <img
           class="my-4"
-          src="public/img/Festival_col6.webp"
+          src="/img/Festival_col6.webp"
           alt="image du festival"
         />
       </div>

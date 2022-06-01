@@ -33,17 +33,17 @@
     >
       <img
         class="my-2"
-        src="public/img/AgoriaC1.webp"
+        src="/img/AgoriaC1.webp"
         alt="Image de Agoria en Concert"
       />
       <img
         class="my-2"
-        src="public/img/AgoriaC2.webp"
+        src="/img/AgoriaC2.webp"
         alt="Image de Agoria en Concert"
       />
       <img
         class="my-2"
-        src="public/img/AgoriaC3.webp"
+        src="/img/AgoriaC3.webp"
         alt="Image de Agoria en Concert"
       />
     </div>

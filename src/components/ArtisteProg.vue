@@ -4,7 +4,7 @@
     style="box-shadow: -3px 4px 8px 1px #6e2e2b"
   >
     <div class="flex flex-col justify-center items-center">
-      <img :src="image" />
+      <img class="rounded-full" :src="image" />
       <p
         class="
           flex-grow-0 flex-shrink-0
