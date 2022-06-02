@@ -41,7 +41,6 @@
 <script>
 import { getFirestore, doc, getDoc, deleteDoc } from "firebase/firestore";
 
-// Storage
 import {
   getStorage,
   ref,
