@@ -24,14 +24,12 @@
 
     <div class="flex flex-col gap-10">
       <div class="flex justify-evenly">
-        <RouterLink
+        <!--<RouterLink
           :to="{ name: 'deleteArtistes', params: { id: Artistes.id } }"
-          ><suppr
-        /></RouterLink>
+          >--><suppr /><!--</RouterLink>
         <RouterLink
           :to="{ name: 'updateArtistes', params: { id: Artistes.id } }"
-          ><modif
-        /></RouterLink>
+          >--><modif /><!--</RouterLink>-->
       </div>
       <RouterLink to="/artiste"><Fleche /></RouterLink>
     </div>

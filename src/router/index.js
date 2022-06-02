@@ -11,6 +11,8 @@ import Page404 from '../views/Page404.vue'
 import CreateArtistesView from '../views/CreateArtistesView.vue'
 import DeleteArtistesView from '../views/DeleteArtistesView.vue'
 import UpdateArtistesView from '../views/UpdateArtistesView.vue'
+import GuideView from '../views/GuideView.vue'
+
 
 
 
@@ -77,6 +79,11 @@ const router = createRouter({
       path: '/updateArtistes/:id',
       name: 'updateArtistes',
       component: UpdateArtistesView
+    },
+    {
+      path: '/guide',
+      name: 'guide',
+      component: GuideView
     },
 
   ]
