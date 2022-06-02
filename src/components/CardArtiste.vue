@@ -33,7 +33,7 @@
           ><modif
         /></RouterLink>
       </div>
-      <Fleche />
+      <RouterLink to="/artiste"><Fleche /></RouterLink>
     </div>
   </div>
 </template>
@@ -43,50 +43,12 @@ import Fleche from "../components/icons/Fleche.vue";
 import suppr from "../components/icons/suppr.vue";
 import modif from "../components/icons/modif.vue";
 
-import { getFirestore, collection, onSnapshot } from "firebase/firestore";
-import { getStorage, ref, getDownloadURL } from "firebase/storage";
-
 export default {
   components: { Fleche, suppr, modif },
   props: {
     nom: String,
     image: String,
     cat: String,
-  },
-  data() {
-    return {
-      listeArtistes: [],
-      nom: null,
-    };
-  },
-  mounted() {
-    this.getArtistes();
-  },
-  methods: {
-    async getArtistes() {
-      const firestore = getFirestore();
-      const dbArtistes = collection(firestore, "Artistes");
-      const query = await onSnapshot(dbArtistes, (snapshot) => {
-        console.log("query", query);
-        this.listeArtistes = snapshot.docs.map((doc) => ({
-          id: doc.id,
-          ...doc.data(),
-        }));
-        this.listeArtistes.forEach(function (personne) {
-          const storage = getStorage();
-          const spaceRef = ref(storage, "Artistes/" + personne.imgPresentation);
-          getDownloadURL(spaceRef)
-            .then((url) => {
-              personne.imgPresentation = url;
-              console.log("personne", personne);
-            })
-            .catch((error) => {
-              console.log("erreur downloadUrl", error);
-            });
-        });
-        console.log("listeArtistes", this.listeArtistes);
-      });
-    },
   },
 };
 </script>

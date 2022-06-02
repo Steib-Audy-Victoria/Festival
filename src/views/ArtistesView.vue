@@ -22,7 +22,49 @@
     </div>
 
     <div class="grid grid-cols-1 lg:grid-cols-2 place-items-center">
-      <RouterLink to="/artiste"
+      <section v-for="Artistes in listeArtistes" :key="Artistes.id">
+        <div
+          class="
+            flex
+            justify-between
+            items-center
+            rounded-xl
+            bg-white
+            m-4
+            p-4
+            w-card_artiste
+          "
+          style="box-shadow: -3px 4px 8px 1px #6e2e2b"
+        >
+          <img
+            :src="Artistes.imgPresentation"
+            class="w-28 rounded-lg object-cover"
+          />
+          <div class="flex flex-col justify-start items-center">
+            <p class="text-4xl font-semibold text-center text-black px-3">
+              {{ Artistes.Nom }}
+            </p>
+            <p class="text-lg text-left text-black px-3">
+              {{ Artistes.Genre }}
+            </p>
+          </div>
+          <div class="flex flex-col gap-10">
+            <div class="flex justify-evenly">
+              <RouterLink
+                :to="{ name: 'deleteArtistes', params: { id: Artistes.id } }"
+                ><suppr
+              /></RouterLink>
+              <RouterLink
+                :to="{ name: 'updateArtistes', params: { id: Artistes.id } }"
+                ><modif
+              /></RouterLink>
+            </div>
+            <RouterLink to="/artiste"><Fleche /></RouterLink>
+          </div>
+        </div>
+      </section>
+
+      <!--<RouterLink to="/artiste" 
         ><CardArtiste
           v-for="Artistes in listeArtistes"
           :key="Artistes.id"
@@ -30,7 +72,7 @@
           :cat="Artistes.Genre"
           :image="Artistes.imgPresentation"
         ></CardArtiste
-      ></RouterLink>
+      ></RouterLink>-->
       <!--<CardArtiste
         nom="Agoria"
         cat="Techno, techno de Détroit, deep house, ambient"
@@ -170,12 +212,24 @@ import ligneMdl from "../components/icons/ligneMdl.vue";
 import ligne1 from "../components/icons/ligne1.vue";
 import ligne2 from "../components/icons/ligne2.vue";
 import ligne3 from "../components/icons/ligne3.vue";
+import Fleche from "../components/icons/Fleche.vue";
+import suppr from "../components/icons/suppr.vue";
+import modif from "../components/icons/modif.vue";
 
 import { getFirestore, collection, onSnapshot } from "firebase/firestore";
 import { getStorage, ref, getDownloadURL } from "firebase/storage";
 
 export default {
-  components: { CardArtiste, ligneMdl, ligne1, ligne2, ligne3 },
+  components: {
+    CardArtiste,
+    ligneMdl,
+    ligne1,
+    ligne2,
+    ligne3,
+    Fleche,
+    suppr,
+    modif,
+  },
   data() {
     return {
       listeArtistes: [],
