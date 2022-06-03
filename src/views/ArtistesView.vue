@@ -13,16 +13,26 @@
       <h2 class="text-Custom-bordeaux text-5xl">Artistes</h2>
     </div>
 
-    <div class="flex justify-center m-2">
-      <RouterLink to="/createArtistes"
-        ><button class="border border-Custom-red text-lg p-2 rounded-lg">
-          Création d'un artiste
-        </button></RouterLink
-      >
+    <div class="flex flex-col">
+      <div class="flex justify-center m-2">
+        <RouterLink to="/createArtistes"
+          ><button class="border border-Custom-red text-lg p-2 rounded-lg">
+            Création d'un artiste
+          </button></RouterLink
+        >
+      </div>
+      <div class="flex justify-center items-center">
+        <input
+          class="border border-Custom-red rounded-lg"
+          type="text"
+          v-model="filter"
+        />
+        <button type="button" title="Filtrage"><loupe /></button>
+      </div>
     </div>
 
     <div class="grid grid-cols-1 lg:grid-cols-2 place-items-center">
-      <section v-for="Artistes in listeArtistes" :key="Artistes.id">
+      <section v-for="Artistes in filterByName" :key="Artistes.id">
         <div
           class="
             flex
@@ -215,6 +225,7 @@ import ligne3 from "../components/icons/ligne3.vue";
 import Fleche from "../components/icons/Fleche.vue";
 import suppr from "../components/icons/suppr.vue";
 import modif from "../components/icons/modif.vue";
+import loupe from "../components/icons/loupe.vue";
 
 import { getFirestore, collection, onSnapshot } from "firebase/firestore";
 import { getStorage, ref, getDownloadURL } from "firebase/storage";
@@ -229,13 +240,35 @@ export default {
     Fleche,
     suppr,
     modif,
+    loupe,
   },
   data() {
     return {
       listeArtistes: [],
       nom: null,
+      filter: "",
     };
   },
+  computed: {
+    orderByName: function () {
+      return this.listeArtistes.sort(function (a, b) {
+        if (a.nom < b.nom) return -1;
+        if (a.nom > b.nom) return 1;
+        return 0;
+      });
+    },
+    filterByName: function () {
+      if (this.filter.length > 0) {
+        let filter = this.filter.toLowerCase();
+        return this.orderByName.filter(function (Artistes) {
+          return Artistes.Nom.toLowerCase().includes(filter);
+        });
+      } else {
+        return this.orderByName;
+      }
+    },
+  },
+
   mounted() {
     this.getArtistes();
   },
