@@ -12,7 +12,7 @@
         x-data="{ q:'', }"
         x-on:submit="q = q + ' site:mmimontbeliard.com'"
       >
-        <label class="text-base" for="q">Text à chercher :</label>
+        <label class="text-base" for="q">Texte à chercher :</label>
         <input
           class="border border-Custom-gray rounded-lg"
           type="text"
