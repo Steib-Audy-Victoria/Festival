@@ -25,7 +25,10 @@
           House, ...
         </p>
         <p class="font-semibold mb-12">Liste des artistes :</p>
-        <div class="grid grid-cols-2 mb-12">
+        <div v-for="Artistes in listeArtistes" :key="Artistes.id">
+          <p>{{ Artistes.Nom }}</p>
+        </div>
+        <!--<div class="grid grid-cols-2 mb-12">
           <ul class="list-disc ml-20">
             <li>Agoria</li>
             <li>Bob Sinclar</li>
@@ -56,7 +59,7 @@
             <li>Panda Dub</li>
             <li>Kiddy Smile</li>
           </ul>
-        </div>
+        </div>-->
         <div>
           <img class="my-4" src="/img/Festival1.webp" alt="image du festival" />
           <img class="my-4" src="/img/Festival2.webp" alt="image du festival" />
@@ -97,3 +100,31 @@
     </div>
   </main>
 </template>
+
+<script>
+import { getFirestore, collection, onSnapshot } from "firebase/firestore";
+
+export default {
+  return: {
+    listeArtistes: [],
+    nom: null,
+  },
+  mounted() {
+    this.getArtistes();
+  },
+  methods: {
+    async getArtistes() {
+      const firestore = getFirestore();
+      const dbArtistes = collection(firestore, "Artistes");
+      const query = await onSnapshot(dbArtistes, (snapshot) => {
+        console.log("query", query);
+        this.listeArtistes = snapshot.docs.map((doc) => ({
+          id: doc.id,
+          ...doc.data(),
+        }));
+        console.log("listeArtistes", this.listeArtistes);
+      });
+    },
+  },
+};
+</script>
