@@ -25,8 +25,10 @@
           House, ...
         </p>
         <p class="font-semibold mb-12">Liste des artistes :</p>
-        <div v-for="Artistes in listeArtistes" :key="Artistes.id">
-          <p class="text-black text-lg ml-8">{{ Artistes.Nom }}</p>
+        <div class="mb-12">
+          <div v-for="Artistes in listeArtistes" :key="Artistes.id">
+            <p class="text-black text-lg ml-8">{{ Artistes.Nom }}</p>
+          </div>
         </div>
         <!--<div class="grid grid-cols-2 mb-12">
           <ul class="list-disc ml-20">
