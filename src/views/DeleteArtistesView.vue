@@ -25,12 +25,14 @@
       </div>
       <div class="flex justify-evenly my-10">
         <button
-          class="border border-Custom-red p-2 rounded-lg text-lg"
+          class="border border-Custom-red             hover:bg-Custom-red
+            hover:text-white p-2 rounded-lg text-lg"
           type="submit"
         >
           Supprimer
         </button>
-        <button class="border border-Custom-red p-2 rounded-lg text-lg">
+        <button class="border border-Custom-red             hover:bg-Custom-red
+            hover:text-white p-2 rounded-lg text-lg">
           <RouterLink to="/artistes">Cancel</RouterLink>
         </button>
       </div>
