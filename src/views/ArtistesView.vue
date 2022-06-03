@@ -16,7 +16,15 @@
     <div class="flex flex-col">
       <div class="flex justify-center m-2">
         <RouterLink to="/createArtistes"
-          ><button class="border border-Custom-red text-lg p-2 rounded-lg">
+          ><button
+            class="
+              border border-Custom-red
+              hover:bg-Custom-red hover:text-white
+              text-lg
+              p-2
+              rounded-lg
+            "
+          >
             Création d'un artiste
           </button></RouterLink
         >
@@ -42,6 +50,8 @@
             bg-white
             m-4
             p-4
+            text-black
+            hover:bg-Custom-bordeaux hover:text-white
             w-card_artiste
           "
           style="box-shadow: -3px 4px 8px 1px #6e2e2b"
@@ -51,10 +61,10 @@
             class="w-28 h-28 rounded-lg object-cover"
           />
           <div class="flex flex-col justify-start items-center">
-            <p class="text-4xl font-semibold text-center text-black px-3">
+            <p class="text-4xl font-semibold text-center px-3">
               {{ Artistes.Nom }}
             </p>
-            <p class="text-lg text-left text-black px-3">
+            <p class="text-lg text-left px-3">
               {{ Artistes.Genre }}
             </p>
           </div>
