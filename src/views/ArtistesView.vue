@@ -29,7 +29,7 @@
           </button></RouterLink
         >
       </div>
-      <div class="flex justify-center items-center">
+      <div class="flex justify-center items-center gap-2">
         <input
           class="border border-Custom-red rounded-lg"
           type="text"
