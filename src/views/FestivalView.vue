@@ -26,7 +26,7 @@
         </p>
         <p class="font-semibold mb-12">Liste des artistes :</p>
         <div v-for="Artistes in listeArtistes" :key="Artistes.id">
-          <p>{{ Artistes.Nom }}</p>
+          <p class="text-black text-lg ml-8">{{ Artistes.Nom }}</p>
         </div>
         <!--<div class="grid grid-cols-2 mb-12">
           <ul class="list-disc ml-20">
@@ -107,7 +107,6 @@ import { getFirestore, collection, onSnapshot } from "firebase/firestore";
 export default {
   return: {
     listeArtistes: [],
-    nom: null,
   },
   mounted() {
     this.getArtistes();
