@@ -38,7 +38,7 @@
         >
           <img
             :src="Artistes.imgPresentation"
-            class="w-28 rounded-lg object-cover"
+            class="w-28 h-28 rounded-lg object-cover"
           />
           <div class="flex flex-col justify-start items-center">
             <p class="text-4xl font-semibold text-center text-black px-3">
