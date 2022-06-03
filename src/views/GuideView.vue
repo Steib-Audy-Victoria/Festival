@@ -1,11 +1,13 @@
 <template>
-  <main>
-    <div class="flex justify-center my-20">
-      <h1 class="text-Custom-red text-4xl">Guide de style</h1>
+  <main class="dark:bg-black">
+    <div class="flex justify-center my-20 mt-0">
+      <h1 class="text-Custom-red text-4xl mt-5">Guide de style</h1>
     </div>
     <section>
       <div class="my-20 mx-10">
-        <h2 class="text-Custom-bordeaux text-3xl">Couleur</h2>
+        <h2 class="text-Custom-bordeaux dark:text-Custom-gray text-3xl">
+          Couleur
+        </h2>
       </div>
       <div>
         <div class="flex justify-center gap-2">
@@ -27,9 +29,11 @@
     </section>
     <section>
       <div class="my-20 mx-10">
-        <h2 class="text-Custom-bordeaux text-3xl">Typographie</h2>
+        <h2 class="text-Custom-bordeaux dark:text-Custom-gray text-3xl">
+          Typographie
+        </h2>
       </div>
-      <div>
+      <div class="dark:text-white">
         <div class="ml-10 my-5">
           <h3 class="font-bold text-2xl">Titre :</h3>
           <hr class="border-2 w-32 border-black" />
@@ -39,7 +43,7 @@
           <div class="font-monaco text-3xl">Monaco</div>
         </div>
       </div>
-      <div>
+      <div class="dark:text-white">
         <div class="ml-10 my-5">
           <h3 class="font-bold text-2xl">Text :</h3>
           <hr class="border-2 w-32 border-black" />
@@ -60,9 +64,11 @@
     </section>
     <section>
       <div class="my-20 mx-10">
-        <h2 class="text-Custom-bordeaux text-3xl">Icones</h2>
+        <h2 class="text-Custom-bordeaux dark:text-Custom-gray text-3xl">
+          Icones
+        </h2>
       </div>
-      <div class="flex gap-12 items-center justify-center">
+      <div class="flex gap-12 items-center justify-center dark:text-white">
         <facebook />
         <fleche />
         <instagram />
@@ -77,7 +83,9 @@
     </section>
     <section class="mb-5">
       <div class="my-20 mx-10">
-        <h2 class="text-Custom-bordeaux text-3xl">Composants</h2>
+        <h2 class="text-Custom-bordeaux dark:text-Custom-gray text-3xl">
+          Composants
+        </h2>
       </div>
       <div class="flex flex-col justify-center items-center gap-3">
         <artiste-prog nom="Nom de l'artiste" image="image" />
