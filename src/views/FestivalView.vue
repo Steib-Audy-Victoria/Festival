@@ -1,5 +1,5 @@
 <template>
-  <main>
+  <main class="dark:bg-black">
     <div
       class="
         bg-[url(public/img/festival_musique_fond.webp)]
@@ -13,7 +13,7 @@
       <h2 class="text-Custom-bordeaux text-5xl">Festival</h2>
     </div>
     <div class="grid grid-cols-1 lg:grid-cols-2 place-items-center">
-      <div class="text-lg m-12 lg:ml-12">
+      <div class="text-lg m-12 lg:ml-12 dark:text-white">
         <p class="mb-12">
           <span class="font-semibold">Festival de musique électronique</span>, à
           strasbourg, du vendredi 22 juillet au dimanche 24 juillet, avec 3
@@ -27,7 +27,9 @@
         <p class="font-semibold mb-12">Liste des artistes :</p>
         <div class="mb-12">
           <div v-for="Artistes in listeArtistes" :key="Artistes.id">
-            <p class="text-black text-lg ml-8">{{ Artistes.Nom }}</p>
+            <p class="text-black dark:text-white text-lg ml-8">
+              {{ Artistes.Nom }}
+            </p>
           </div>
         </div>
         <!--<div class="grid grid-cols-2 mb-12">
